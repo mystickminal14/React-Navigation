@@ -1,0 +1,51 @@
+a{
+  color:white;
+ 
+  text-decoration:none;
+}
+h1{
+  color:rgb(250, 99, 99);
+}
+nav{
+  display:flex;
+  height:40px;
+  background:rgb(75, 71, 71);
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul {
+  display:flex;
+  list-style:none;
+  gap:1em;
+}
+a.active{
+  color:skyblue;
+}
+.search{
+  display:flex;
+  gap:1em;
+  margin:1em;
+}
+.io{
+  display:none;
+}
+@media (max-width:665px){
+  .io{
+    display:flex;
+  }
+  nav ul{
+left:-100%;
+    position:absolute;
+    flex-direction: column;
+    background:gray;
+    width:100%;
+    top:20px;
+    padding:1em;
+    transition:0.3s ease;
+    text-align: center;
+  }
+  nav ul.open{
+  left:0;
+  
+  }
+}
